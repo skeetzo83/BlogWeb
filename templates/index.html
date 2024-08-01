@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="top">
+        <div class="title"><h1>My Blog</h1></div>
+    </div>
+    <div class="content">
+        <div class="card">
+            <h2>{{ title_one }}</h2>
+            <p class="text">{{ subtitle_one }}</p>
+            <a href="{{ url_for('body_one') }}">Read</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="card">
+            <h2>{{ title_two }}</h2>
+            <p class="text">{{ subtitle_two }} </p>
+            <a href="{{ url_for('body_two') }}">Read</a>
+        </div>
+    </div>
+        <div class="content">
+        <div class="card">
+            <h2>{{ title_three }}</h2>
+            <p class="text">{{ subtitle_three }}</p>
+            <a href="{{ url_for('body_three') }}">Read</a>
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <p>Made with ♥️ in London.</p>
+</footer>
+</html>
